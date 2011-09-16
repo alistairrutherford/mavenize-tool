@@ -119,5 +119,18 @@
 		  <version>2.2.4-1</version>
 		</dependency>
 	</dependencies>
-  
+
+	<distributionManagement>
+		<repository>
+			<id>central</id>
+			<name>Releases</name>
+			<url>https://mavenize-tool.googlecode.com/svn/release</url>
+		</repository>
+		<snapshotRepository>
+			<id>snapshots</id>
+			<name>Snapshots</name>
+			<url>https://mavenize-tool.googlecode.com/svn/snapshot</url>
+		</snapshotRepository>
+	</distributionManagement>
+	
 </project>
