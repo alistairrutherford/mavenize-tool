@@ -5,8 +5,8 @@
 	<version>1.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 	<url>http://maven.apache.org</url>
-	<name>mavenize</name>
 	<artifactId>mavenize</artifactId>
+	<name>mavenize</name>
   
 	<scm>
 		<connection>scm:svn:https://mavenize-tool.googlecode.com/svn/trunk</connection>
