@@ -62,8 +62,8 @@ public class DefaultPomGenerator implements PomGenerator
         model.setModelVersion(DEFAULT_MODEL_VERSION);
         model.setVersion(version);
 
-        // Packaging name doesn't like lower case letters.
-        model.setPackaging(packaging.toUpperCase());
+        // Packaging name doesn't like upper case letters.
+        model.setPackaging(packaging.toLowerCase());
 
         populate(projectFiles, model);
         
