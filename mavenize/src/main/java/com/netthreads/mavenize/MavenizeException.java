@@ -20,6 +20,7 @@ package com.netthreads.mavenize;
  *
  * @author rut19830
  */
+@SuppressWarnings("serial")
 public class MavenizeException extends Exception
 {
 
