@@ -2,16 +2,16 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.netthreads</groupId>
-	<version>1.0.2-SNAPSHOT</version>
+	<version>1.0.2</version>
 	<packaging>jar</packaging>
 	<url>http://maven.apache.org</url>
 	<artifactId>mavenize</artifactId>
 	<name>mavenize</name>
   
 	<scm>
-		<connection>scm:svn:https://mavenize-tool.googlecode.com/svn/trunk</connection>
-		<developerConnection>scm:svn:https://mavenize-tool.googlecode.com/svn/trunk</developerConnection>
-		<url>scm:svn:https://mavenize-tool.googlecode.com/svn/trunk</url>
+		<connection>scm:svn:https://mavenize-tool.googlecode.com/svn/tags/mavenize-1.0.2</connection>
+		<developerConnection>scm:svn:https://mavenize-tool.googlecode.com/svn/tags/mavenize-1.0.2</developerConnection>
+		<url>scm:svn:https://mavenize-tool.googlecode.com/svn/tags/mavenize-1.0.2</url>
 	</scm>
   
 	<properties>
