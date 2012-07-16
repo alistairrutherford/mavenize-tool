@@ -52,6 +52,7 @@ import org.slf4j.LoggerFactory;
  * - NetBeans java module netbeans.
  *
  */
+@SuppressWarnings("unchecked")
 public class Mavenize
 {
 
@@ -180,17 +181,27 @@ public class Mavenize
 
         logger.info("Resource Files, " + resourceFiles.size());
 
+        logger.info("Generate directory structure, " + sourceFiles.size());
+
         // Generate Maven directory structure
         makeMavenDirs(projectType, sourceFiles);
+
+        logger.info("Copy main files.");
 
         // Copy over project files.
         insertMainProjectFiles(projectType, sourceFiles, resourceFiles);
 
+        logger.info("Copy test files.");
+
         // Copy over test files.
         insertTestProjectFiles(projectType, sourceFiles, resourceFiles);
 
-        // Generate poms
+        logger.info("Generate pom(s).");
+
+        // Generate pom(s).
         insertProjectPom(projectType, version, packaging, sourceFiles);
+        
+        logger.info("Done.");
     }
 
     /**
@@ -453,7 +464,7 @@ public class Mavenize
      * 
      * @throws IOException 
      */
-    private List<ProjectFiles> buildProjectFiles(ProjectType projectType, String sourcePath, String targetPath) throws IOException
+	private List<ProjectFiles> buildProjectFiles(ProjectType projectType, String sourcePath, String targetPath) throws IOException
     {
         List<ProjectFiles> results = new LinkedList<ProjectFiles>();
 
